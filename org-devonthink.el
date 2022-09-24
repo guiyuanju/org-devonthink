@@ -2,7 +2,7 @@
 
 (defun org-dtp-open (record-location)
   "Visit the dtp message with the given Message-ID."
-  (shell-command (concat "open x-devonthink-item:" record-location)))
+  (shell-command (concat "open \"x-devonthink-item:" record-location "\"")))
 
 (defun org-get-dtp-link (&optional given-name)
   (interactive)
